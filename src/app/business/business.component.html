@@ -1,0 +1,12 @@
+<div class="container-fluid mt-5">
+  <h2>Top-Headlines Business</h2>
+  <div class="row">
+    <div *ngFor="let d of businessheadingDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="box">
+        <h5 class="mt-2 mb-2">{{d.title}}</h5>
+        <p>By: {{d.source}}</p>
+        <a href="{{d.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Read more...</a>
+      </div>
+    </div>
+  </div>
+</div>

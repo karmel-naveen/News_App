@@ -1,0 +1,13 @@
+<div class="container-fluid mt-5">
+  <h2>Top-Headlines Crypto</h2>
+  <div class="row">
+    <div *ngFor="let d of cryptoheadingDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="box">
+        <!-- <img src="{{d.image}}" alt="Image Not Available" width="100%"> -->
+        <h5 class="mt-2 mb-2">{{d.title}}</h5>
+        <p>By: {{d.source}}</p>
+        <a href="{{d.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Read more...</a>
+      </div>
+    </div>
+  </div>
+</div>
